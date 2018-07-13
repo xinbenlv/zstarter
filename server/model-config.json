@@ -12,5 +12,19 @@
       "../common/mixins",
       "./mixins"
     ]
+  },
+  "ZgUserProfile": {
+    "dataSource": "db-dev",
+    "public": true
+  },
+  "ZgWallet": {
+    "dataSource": "db-dev",
+    "public": true
+  },
+  "ZgTransactionEntry": {
+    "dataSource": "db-dev",
+    "public": true,
+    "$promise": {},
+    "$resolved": true
   }
 }

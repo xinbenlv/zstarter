@@ -1,0 +1,36 @@
+{
+  "name": "ZgUserProfile",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "id": {
+      "type": "string",
+      "id": true,
+      "required": true,
+      "index": false,
+      "description": "id of",
+      "isArray": false
+    },
+    "role": {
+      "type": "string",
+      "required": false,
+      "description": "ENUM of [User, System]"
+    },
+    "email": {
+      "type": "string",
+      "required": false,
+      "description": "Email address"
+    },
+    "fullname": {
+      "type": "string",
+      "required": false
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

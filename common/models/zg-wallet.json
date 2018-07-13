@@ -1,0 +1,41 @@
+{
+  "name": "ZgWallet",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "id": {
+      "type": "string",
+      "required": false
+    },
+    "ownerId": {
+      "type": "string",
+      "required": false,
+      "description": ""
+    },
+    "tokenSimbol": {
+      "type": "string",
+      "required": false
+    },
+    "currentBalance": {
+      "type": "number",
+      "required": false
+    },
+    "lastestTxId": {
+      "type": "string",
+      "required": false
+    }
+  },
+  "validations": [],
+  "relations": {
+    "owner": {
+      "type": "belongsTo",
+      "model": "ZgUserProfile",
+      "foreignKey": "ownerId"
+    }
+  },
+  "acls": [],
+  "methods": {}
+}

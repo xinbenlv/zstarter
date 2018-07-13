@@ -1,10 +1,10 @@
 paths:
-  /Transactions:
+  /ZgUserProfiles:
     post:
       tags:
-        - Transaction
+        - ZgUserProfile
       summary: Create a new instance of the model and persist it into the data source.
-      operationId: Transaction.create
+      operationId: ZgUserProfile.create
       parameters:
         - name: data
           in: body
@@ -12,18 +12,18 @@ paths:
           required: false
           schema:
             description: Model instance data
-            $ref: '#/definitions/Transaction'
+            $ref: '#/definitions/ZgUserProfile'
       responses:
         '200':
           description: Request was successful
           schema:
-            $ref: '#/definitions/Transaction'
+            $ref: '#/definitions/ZgUserProfile'
       deprecated: false
     patch:
       tags:
-        - Transaction
+        - ZgUserProfile
       summary: Patch an existing model instance or insert a new one into the data source.
-      operationId: Transaction.patchOrCreate
+      operationId: ZgUserProfile.patchOrCreate
       parameters:
         - name: data
           in: body
@@ -31,18 +31,18 @@ paths:
           required: false
           schema:
             description: Model instance data
-            $ref: '#/definitions/Transaction'
+            $ref: '#/definitions/ZgUserProfile'
       responses:
         '200':
           description: Request was successful
           schema:
-            $ref: '#/definitions/Transaction'
+            $ref: '#/definitions/ZgUserProfile'
       deprecated: false
     put:
       tags:
-        - Transaction
+        - ZgUserProfile
       summary: Replace an existing model instance or insert a new one into the data source.
-      operationId: Transaction.replaceOrCreate__put_Transactions
+      operationId: ZgUserProfile.replaceOrCreate__put_ZgUserProfiles
       parameters:
         - name: data
           in: body
@@ -50,18 +50,18 @@ paths:
           required: false
           schema:
             description: Model instance data
-            $ref: '#/definitions/Transaction'
+            $ref: '#/definitions/ZgUserProfile'
       responses:
         '200':
           description: Request was successful
           schema:
-            $ref: '#/definitions/Transaction'
+            $ref: '#/definitions/ZgUserProfile'
       deprecated: false
     get:
       tags:
-        - Transaction
+        - ZgUserProfile
       summary: Find all instances of the model matched by filter from the data source.
-      operationId: Transaction.find
+      operationId: ZgUserProfile.find
       parameters:
         - name: filter
           in: query
@@ -75,14 +75,14 @@ paths:
           schema:
             type: array
             items:
-              $ref: '#/definitions/Transaction'
+              $ref: '#/definitions/ZgUserProfile'
       deprecated: false
-  /Transactions/replaceOrCreate:
+  /ZgUserProfiles/replaceOrCreate:
     post:
       tags:
-        - Transaction
+        - ZgUserProfile
       summary: Replace an existing model instance or insert a new one into the data source.
-      operationId: Transaction.replaceOrCreate__post_Transactions_replaceOrCreate
+      operationId: ZgUserProfile.replaceOrCreate__post_ZgUserProfiles_replaceOrCreate
       parameters:
         - name: data
           in: body
@@ -90,19 +90,19 @@ paths:
           required: false
           schema:
             description: Model instance data
-            $ref: '#/definitions/Transaction'
+            $ref: '#/definitions/ZgUserProfile'
       responses:
         '200':
           description: Request was successful
           schema:
-            $ref: '#/definitions/Transaction'
+            $ref: '#/definitions/ZgUserProfile'
       deprecated: false
-  /Transactions/upsertWithWhere:
+  /ZgUserProfiles/upsertWithWhere:
     post:
       tags:
-        - Transaction
+        - ZgUserProfile
       summary: Update an existing model instance or insert a new one into the data source based on the where criteria.
-      operationId: Transaction.upsertWithWhere
+      operationId: ZgUserProfile.upsertWithWhere
       parameters:
         - name: where
           in: query
@@ -116,19 +116,19 @@ paths:
           required: false
           schema:
             description: An object of model property name/value pairs
-            $ref: '#/definitions/Transaction'
+            $ref: '#/definitions/ZgUserProfile'
       responses:
         '200':
           description: Request was successful
           schema:
-            $ref: '#/definitions/Transaction'
+            $ref: '#/definitions/ZgUserProfile'
       deprecated: false
-  '/Transactions/{id}/exists':
+  '/ZgUserProfiles/{id}/exists':
     get:
       tags:
-        - Transaction
+        - ZgUserProfile
       summary: Check whether a model instance exists in the data source.
-      operationId: 'Transaction.exists__get_Transactions_{id}_exists'
+      operationId: 'ZgUserProfile.exists__get_ZgUserProfiles_{id}_exists'
       parameters:
         - name: id
           in: path
@@ -145,12 +145,12 @@ paths:
               exists:
                 type: boolean
       deprecated: false
-  '/Transactions/{id}':
+  '/ZgUserProfiles/{id}':
     head:
       tags:
-        - Transaction
+        - ZgUserProfile
       summary: Check whether a model instance exists in the data source.
-      operationId: 'Transaction.exists__head_Transactions_{id}'
+      operationId: 'ZgUserProfile.exists__head_ZgUserProfiles_{id}'
       parameters:
         - name: id
           in: path
@@ -169,9 +169,9 @@ paths:
       deprecated: false
     get:
       tags:
-        - Transaction
+        - ZgUserProfile
       summary: 'Find a model instance by {{id}} from the data source.'
-      operationId: Transaction.findById
+      operationId: ZgUserProfile.findById
       parameters:
         - name: id
           in: path
@@ -189,13 +189,13 @@ paths:
         '200':
           description: Request was successful
           schema:
-            $ref: '#/definitions/Transaction'
+            $ref: '#/definitions/ZgUserProfile'
       deprecated: false
     put:
       tags:
-        - Transaction
+        - ZgUserProfile
       summary: Replace attributes for a model instance and persist it into the data source.
-      operationId: 'Transaction.replaceById__put_Transactions_{id}'
+      operationId: 'ZgUserProfile.replaceById__put_ZgUserProfiles_{id}'
       parameters:
         - name: id
           in: path
@@ -209,18 +209,18 @@ paths:
           required: false
           schema:
             description: Model instance data
-            $ref: '#/definitions/Transaction'
+            $ref: '#/definitions/ZgUserProfile'
       responses:
         '200':
           description: Request was successful
           schema:
-            $ref: '#/definitions/Transaction'
+            $ref: '#/definitions/ZgUserProfile'
       deprecated: false
     delete:
       tags:
-        - Transaction
+        - ZgUserProfile
       summary: 'Delete a model instance by {{id}} from the data source.'
-      operationId: Transaction.deleteById
+      operationId: ZgUserProfile.deleteById
       parameters:
         - name: id
           in: path
@@ -236,9 +236,9 @@ paths:
       deprecated: false
     patch:
       tags:
-        - Transaction
+        - ZgUserProfile
       summary: Patch attributes for a model instance and persist it into the data source.
-      operationId: Transaction.prototype.patchAttributes
+      operationId: ZgUserProfile.prototype.patchAttributes
       parameters:
         - name: data
           in: body
@@ -246,10 +246,10 @@ paths:
           required: false
           schema:
             description: An object of model property name/value pairs
-            $ref: '#/definitions/Transaction'
+            $ref: '#/definitions/ZgUserProfile'
         - name: id
           in: path
-          description: Transaction id
+          description: ZgUserProfile id
           required: true
           type: string
           format: JSON
@@ -257,14 +257,14 @@ paths:
         '200':
           description: Request was successful
           schema:
-            $ref: '#/definitions/Transaction'
+            $ref: '#/definitions/ZgUserProfile'
       deprecated: false
-  '/Transactions/{id}/replace':
+  '/ZgUserProfiles/{id}/replace':
     post:
       tags:
-        - Transaction
+        - ZgUserProfile
       summary: Replace attributes for a model instance and persist it into the data source.
-      operationId: 'Transaction.replaceById__post_Transactions_{id}_replace'
+      operationId: 'ZgUserProfile.replaceById__post_ZgUserProfiles_{id}_replace'
       parameters:
         - name: id
           in: path
@@ -278,19 +278,19 @@ paths:
           required: false
           schema:
             description: Model instance data
-            $ref: '#/definitions/Transaction'
+            $ref: '#/definitions/ZgUserProfile'
       responses:
         '200':
           description: Request was successful
           schema:
-            $ref: '#/definitions/Transaction'
+            $ref: '#/definitions/ZgUserProfile'
       deprecated: false
-  /Transactions/findOne:
+  /ZgUserProfiles/findOne:
     get:
       tags:
-        - Transaction
+        - ZgUserProfile
       summary: Find first instance of the model matched by filter from the data source.
-      operationId: Transaction.findOne
+      operationId: ZgUserProfile.findOne
       parameters:
         - name: filter
           in: query
@@ -302,14 +302,14 @@ paths:
         '200':
           description: Request was successful
           schema:
-            $ref: '#/definitions/Transaction'
+            $ref: '#/definitions/ZgUserProfile'
       deprecated: false
-  /Transactions/update:
+  /ZgUserProfiles/update:
     post:
       tags:
-        - Transaction
+        - ZgUserProfile
       summary: 'Update instances of the model matched by {{where}} from the data source.'
-      operationId: Transaction.updateAll
+      operationId: ZgUserProfile.updateAll
       parameters:
         - name: where
           in: query
@@ -323,7 +323,7 @@ paths:
           required: false
           schema:
             description: An object of model property name/value pairs
-            $ref: '#/definitions/Transaction'
+            $ref: '#/definitions/ZgUserProfile'
       responses:
         '200':
           description: Request was successful
@@ -336,12 +336,12 @@ paths:
                 type: number
                 format: double
       deprecated: false
-  /Transactions/count:
+  /ZgUserProfiles/count:
     get:
       tags:
-        - Transaction
+        - ZgUserProfile
       summary: Count instances of the model matched by where from the data source.
-      operationId: Transaction.count
+      operationId: ZgUserProfile.count
       parameters:
         - name: where
           in: query
@@ -359,12 +359,12 @@ paths:
                 type: number
                 format: double
       deprecated: false
-  /AccountInfos:
+  /ZgWallets:
     post:
       tags:
-        - AccountInfo
+        - ZgWallet
       summary: Create a new instance of the model and persist it into the data source.
-      operationId: AccountInfo.create
+      operationId: ZgWallet.create
       parameters:
         - name: data
           in: body
@@ -372,18 +372,18 @@ paths:
           required: false
           schema:
             description: Model instance data
-            $ref: '#/definitions/AccountInfo'
+            $ref: '#/definitions/ZgWallet'
       responses:
         '200':
           description: Request was successful
           schema:
-            $ref: '#/definitions/AccountInfo'
+            $ref: '#/definitions/ZgWallet'
       deprecated: false
     patch:
       tags:
-        - AccountInfo
+        - ZgWallet
       summary: Patch an existing model instance or insert a new one into the data source.
-      operationId: AccountInfo.patchOrCreate
+      operationId: ZgWallet.patchOrCreate
       parameters:
         - name: data
           in: body
@@ -391,18 +391,18 @@ paths:
           required: false
           schema:
             description: Model instance data
-            $ref: '#/definitions/AccountInfo'
+            $ref: '#/definitions/ZgWallet'
       responses:
         '200':
           description: Request was successful
           schema:
-            $ref: '#/definitions/AccountInfo'
+            $ref: '#/definitions/ZgWallet'
       deprecated: false
     put:
       tags:
-        - AccountInfo
+        - ZgWallet
       summary: Replace an existing model instance or insert a new one into the data source.
-      operationId: AccountInfo.replaceOrCreate__put_AccountInfos
+      operationId: ZgWallet.replaceOrCreate__put_ZgWallets
       parameters:
         - name: data
           in: body
@@ -410,18 +410,18 @@ paths:
           required: false
           schema:
             description: Model instance data
-            $ref: '#/definitions/AccountInfo'
+            $ref: '#/definitions/ZgWallet'
       responses:
         '200':
           description: Request was successful
           schema:
-            $ref: '#/definitions/AccountInfo'
+            $ref: '#/definitions/ZgWallet'
       deprecated: false
     get:
       tags:
-        - AccountInfo
+        - ZgWallet
       summary: Find all instances of the model matched by filter from the data source.
-      operationId: AccountInfo.find
+      operationId: ZgWallet.find
       parameters:
         - name: filter
           in: query
@@ -435,14 +435,14 @@ paths:
           schema:
             type: array
             items:
-              $ref: '#/definitions/AccountInfo'
+              $ref: '#/definitions/ZgWallet'
       deprecated: false
-  /AccountInfos/replaceOrCreate:
+  /ZgWallets/replaceOrCreate:
     post:
       tags:
-        - AccountInfo
+        - ZgWallet
       summary: Replace an existing model instance or insert a new one into the data source.
-      operationId: AccountInfo.replaceOrCreate__post_AccountInfos_replaceOrCreate
+      operationId: ZgWallet.replaceOrCreate__post_ZgWallets_replaceOrCreate
       parameters:
         - name: data
           in: body
@@ -450,19 +450,19 @@ paths:
           required: false
           schema:
             description: Model instance data
-            $ref: '#/definitions/AccountInfo'
+            $ref: '#/definitions/ZgWallet'
       responses:
         '200':
           description: Request was successful
           schema:
-            $ref: '#/definitions/AccountInfo'
+            $ref: '#/definitions/ZgWallet'
       deprecated: false
-  /AccountInfos/upsertWithWhere:
+  /ZgWallets/upsertWithWhere:
     post:
       tags:
-        - AccountInfo
+        - ZgWallet
       summary: Update an existing model instance or insert a new one into the data source based on the where criteria.
-      operationId: AccountInfo.upsertWithWhere
+      operationId: ZgWallet.upsertWithWhere
       parameters:
         - name: where
           in: query
@@ -476,19 +476,19 @@ paths:
           required: false
           schema:
             description: An object of model property name/value pairs
-            $ref: '#/definitions/AccountInfo'
+            $ref: '#/definitions/ZgWallet'
       responses:
         '200':
           description: Request was successful
           schema:
-            $ref: '#/definitions/AccountInfo'
+            $ref: '#/definitions/ZgWallet'
       deprecated: false
-  '/AccountInfos/{id}/exists':
+  '/ZgWallets/{id}/exists':
     get:
       tags:
-        - AccountInfo
+        - ZgWallet
       summary: Check whether a model instance exists in the data source.
-      operationId: 'AccountInfo.exists__get_AccountInfos_{id}_exists'
+      operationId: 'ZgWallet.exists__get_ZgWallets_{id}_exists'
       parameters:
         - name: id
           in: path
@@ -505,12 +505,12 @@ paths:
               exists:
                 type: boolean
       deprecated: false
-  '/AccountInfos/{id}':
+  '/ZgWallets/{id}':
     head:
       tags:
-        - AccountInfo
+        - ZgWallet
       summary: Check whether a model instance exists in the data source.
-      operationId: 'AccountInfo.exists__head_AccountInfos_{id}'
+      operationId: 'ZgWallet.exists__head_ZgWallets_{id}'
       parameters:
         - name: id
           in: path
@@ -529,9 +529,9 @@ paths:
       deprecated: false
     get:
       tags:
-        - AccountInfo
+        - ZgWallet
       summary: 'Find a model instance by {{id}} from the data source.'
-      operationId: AccountInfo.findById
+      operationId: ZgWallet.findById
       parameters:
         - name: id
           in: path
@@ -549,13 +549,13 @@ paths:
         '200':
           description: Request was successful
           schema:
-            $ref: '#/definitions/AccountInfo'
+            $ref: '#/definitions/ZgWallet'
       deprecated: false
     put:
       tags:
-        - AccountInfo
+        - ZgWallet
       summary: Replace attributes for a model instance and persist it into the data source.
-      operationId: 'AccountInfo.replaceById__put_AccountInfos_{id}'
+      operationId: 'ZgWallet.replaceById__put_ZgWallets_{id}'
       parameters:
         - name: id
           in: path
@@ -569,18 +569,18 @@ paths:
           required: false
           schema:
             description: Model instance data
-            $ref: '#/definitions/AccountInfo'
+            $ref: '#/definitions/ZgWallet'
       responses:
         '200':
           description: Request was successful
           schema:
-            $ref: '#/definitions/AccountInfo'
+            $ref: '#/definitions/ZgWallet'
       deprecated: false
     delete:
       tags:
-        - AccountInfo
+        - ZgWallet
       summary: 'Delete a model instance by {{id}} from the data source.'
-      operationId: AccountInfo.deleteById
+      operationId: ZgWallet.deleteById
       parameters:
         - name: id
           in: path
@@ -596,9 +596,9 @@ paths:
       deprecated: false
     patch:
       tags:
-        - AccountInfo
+        - ZgWallet
       summary: Patch attributes for a model instance and persist it into the data source.
-      operationId: AccountInfo.prototype.patchAttributes
+      operationId: ZgWallet.prototype.patchAttributes
       parameters:
         - name: data
           in: body
@@ -606,10 +606,10 @@ paths:
           required: false
           schema:
             description: An object of model property name/value pairs
-            $ref: '#/definitions/AccountInfo'
+            $ref: '#/definitions/ZgWallet'
         - name: id
           in: path
-          description: AccountInfo id
+          description: ZgWallet id
           required: true
           type: string
           format: JSON
@@ -617,14 +617,14 @@ paths:
         '200':
           description: Request was successful
           schema:
-            $ref: '#/definitions/AccountInfo'
+            $ref: '#/definitions/ZgWallet'
       deprecated: false
-  '/AccountInfos/{id}/replace':
+  '/ZgWallets/{id}/replace':
     post:
       tags:
-        - AccountInfo
+        - ZgWallet
       summary: Replace attributes for a model instance and persist it into the data source.
-      operationId: 'AccountInfo.replaceById__post_AccountInfos_{id}_replace'
+      operationId: 'ZgWallet.replaceById__post_ZgWallets_{id}_replace'
       parameters:
         - name: id
           in: path
@@ -638,19 +638,19 @@ paths:
           required: false
           schema:
             description: Model instance data
-            $ref: '#/definitions/AccountInfo'
+            $ref: '#/definitions/ZgWallet'
       responses:
         '200':
           description: Request was successful
           schema:
-            $ref: '#/definitions/AccountInfo'
+            $ref: '#/definitions/ZgWallet'
       deprecated: false
-  /AccountInfos/findOne:
+  /ZgWallets/findOne:
     get:
       tags:
-        - AccountInfo
+        - ZgWallet
       summary: Find first instance of the model matched by filter from the data source.
-      operationId: AccountInfo.findOne
+      operationId: ZgWallet.findOne
       parameters:
         - name: filter
           in: query
@@ -662,14 +662,14 @@ paths:
         '200':
           description: Request was successful
           schema:
-            $ref: '#/definitions/AccountInfo'
+            $ref: '#/definitions/ZgWallet'
       deprecated: false
-  /AccountInfos/update:
+  /ZgWallets/update:
     post:
       tags:
-        - AccountInfo
+        - ZgWallet
       summary: 'Update instances of the model matched by {{where}} from the data source.'
-      operationId: AccountInfo.updateAll
+      operationId: ZgWallet.updateAll
       parameters:
         - name: where
           in: query
@@ -683,7 +683,7 @@ paths:
           required: false
           schema:
             description: An object of model property name/value pairs
-            $ref: '#/definitions/AccountInfo'
+            $ref: '#/definitions/ZgWallet'
       responses:
         '200':
           description: Request was successful
@@ -696,12 +696,12 @@ paths:
                 type: number
                 format: double
       deprecated: false
-  /AccountInfos/count:
+  /ZgWallets/count:
     get:
       tags:
-        - AccountInfo
+        - ZgWallet
       summary: Count instances of the model matched by where from the data source.
-      operationId: AccountInfo.count
+      operationId: ZgWallet.count
       parameters:
         - name: where
           in: query
@@ -719,12 +719,12 @@ paths:
                 type: number
                 format: double
       deprecated: false
-  /Campaigns:
+  /ZgTransactionEntries:
     post:
       tags:
-        - Campaign
+        - ZgTransactionEntry
       summary: Create a new instance of the model and persist it into the data source.
-      operationId: Campaign.create
+      operationId: ZgTransactionEntry.create
       parameters:
         - name: data
           in: body
@@ -732,18 +732,18 @@ paths:
           required: false
           schema:
             description: Model instance data
-            $ref: '#/definitions/Campaign'
+            $ref: '#/definitions/ZgTransactionEntry'
       responses:
         '200':
           description: Request was successful
           schema:
-            $ref: '#/definitions/Campaign'
+            $ref: '#/definitions/ZgTransactionEntry'
       deprecated: false
     patch:
       tags:
-        - Campaign
+        - ZgTransactionEntry
       summary: Patch an existing model instance or insert a new one into the data source.
-      operationId: Campaign.patchOrCreate
+      operationId: ZgTransactionEntry.patchOrCreate
       parameters:
         - name: data
           in: body
@@ -751,18 +751,18 @@ paths:
           required: false
           schema:
             description: Model instance data
-            $ref: '#/definitions/Campaign'
+            $ref: '#/definitions/ZgTransactionEntry'
       responses:
         '200':
           description: Request was successful
           schema:
-            $ref: '#/definitions/Campaign'
+            $ref: '#/definitions/ZgTransactionEntry'
       deprecated: false
     put:
       tags:
-        - Campaign
+        - ZgTransactionEntry
       summary: Replace an existing model instance or insert a new one into the data source.
-      operationId: Campaign.replaceOrCreate__put_Campaigns
+      operationId: ZgTransactionEntry.replaceOrCreate__put_ZgTransactionEntries
       parameters:
         - name: data
           in: body
@@ -770,18 +770,18 @@ paths:
           required: false
           schema:
             description: Model instance data
-            $ref: '#/definitions/Campaign'
+            $ref: '#/definitions/ZgTransactionEntry'
       responses:
         '200':
           description: Request was successful
           schema:
-            $ref: '#/definitions/Campaign'
+            $ref: '#/definitions/ZgTransactionEntry'
       deprecated: false
     get:
       tags:
-        - Campaign
+        - ZgTransactionEntry
       summary: Find all instances of the model matched by filter from the data source.
-      operationId: Campaign.find
+      operationId: ZgTransactionEntry.find
       parameters:
         - name: filter
           in: query
@@ -795,14 +795,14 @@ paths:
           schema:
             type: array
             items:
-              $ref: '#/definitions/Campaign'
+              $ref: '#/definitions/ZgTransactionEntry'
       deprecated: false
-  /Campaigns/replaceOrCreate:
+  /ZgTransactionEntries/replaceOrCreate:
     post:
       tags:
-        - Campaign
+        - ZgTransactionEntry
       summary: Replace an existing model instance or insert a new one into the data source.
-      operationId: Campaign.replaceOrCreate__post_Campaigns_replaceOrCreate
+      operationId: ZgTransactionEntry.replaceOrCreate__post_ZgTransactionEntries_replaceOrCreate
       parameters:
         - name: data
           in: body
@@ -810,19 +810,19 @@ paths:
           required: false
           schema:
             description: Model instance data
-            $ref: '#/definitions/Campaign'
+            $ref: '#/definitions/ZgTransactionEntry'
       responses:
         '200':
           description: Request was successful
           schema:
-            $ref: '#/definitions/Campaign'
+            $ref: '#/definitions/ZgTransactionEntry'
       deprecated: false
-  /Campaigns/upsertWithWhere:
+  /ZgTransactionEntries/upsertWithWhere:
     post:
       tags:
-        - Campaign
+        - ZgTransactionEntry
       summary: Update an existing model instance or insert a new one into the data source based on the where criteria.
-      operationId: Campaign.upsertWithWhere
+      operationId: ZgTransactionEntry.upsertWithWhere
       parameters:
         - name: where
           in: query
@@ -836,19 +836,19 @@ paths:
           required: false
           schema:
             description: An object of model property name/value pairs
-            $ref: '#/definitions/Campaign'
+            $ref: '#/definitions/ZgTransactionEntry'
       responses:
         '200':
           description: Request was successful
           schema:
-            $ref: '#/definitions/Campaign'
+            $ref: '#/definitions/ZgTransactionEntry'
       deprecated: false
-  '/Campaigns/{id}/exists':
+  '/ZgTransactionEntries/{id}/exists':
     get:
       tags:
-        - Campaign
+        - ZgTransactionEntry
       summary: Check whether a model instance exists in the data source.
-      operationId: 'Campaign.exists__get_Campaigns_{id}_exists'
+      operationId: 'ZgTransactionEntry.exists__get_ZgTransactionEntries_{id}_exists'
       parameters:
         - name: id
           in: path
@@ -865,12 +865,12 @@ paths:
               exists:
                 type: boolean
       deprecated: false
-  '/Campaigns/{id}':
+  '/ZgTransactionEntries/{id}':
     head:
       tags:
-        - Campaign
+        - ZgTransactionEntry
       summary: Check whether a model instance exists in the data source.
-      operationId: 'Campaign.exists__head_Campaigns_{id}'
+      operationId: 'ZgTransactionEntry.exists__head_ZgTransactionEntries_{id}'
       parameters:
         - name: id
           in: path
@@ -889,9 +889,9 @@ paths:
       deprecated: false
     get:
       tags:
-        - Campaign
+        - ZgTransactionEntry
       summary: 'Find a model instance by {{id}} from the data source.'
-      operationId: Campaign.findById
+      operationId: ZgTransactionEntry.findById
       parameters:
         - name: id
           in: path
@@ -909,13 +909,13 @@ paths:
         '200':
           description: Request was successful
           schema:
-            $ref: '#/definitions/Campaign'
+            $ref: '#/definitions/ZgTransactionEntry'
       deprecated: false
     put:
       tags:
-        - Campaign
+        - ZgTransactionEntry
       summary: Replace attributes for a model instance and persist it into the data source.
-      operationId: 'Campaign.replaceById__put_Campaigns_{id}'
+      operationId: 'ZgTransactionEntry.replaceById__put_ZgTransactionEntries_{id}'
       parameters:
         - name: id
           in: path
@@ -929,18 +929,18 @@ paths:
           required: false
           schema:
             description: Model instance data
-            $ref: '#/definitions/Campaign'
+            $ref: '#/definitions/ZgTransactionEntry'
       responses:
         '200':
           description: Request was successful
           schema:
-            $ref: '#/definitions/Campaign'
+            $ref: '#/definitions/ZgTransactionEntry'
       deprecated: false
     delete:
       tags:
-        - Campaign
+        - ZgTransactionEntry
       summary: 'Delete a model instance by {{id}} from the data source.'
-      operationId: Campaign.deleteById
+      operationId: ZgTransactionEntry.deleteById
       parameters:
         - name: id
           in: path
@@ -956,9 +956,9 @@ paths:
       deprecated: false
     patch:
       tags:
-        - Campaign
+        - ZgTransactionEntry
       summary: Patch attributes for a model instance and persist it into the data source.
-      operationId: Campaign.prototype.patchAttributes
+      operationId: ZgTransactionEntry.prototype.patchAttributes
       parameters:
         - name: data
           in: body
@@ -966,10 +966,10 @@ paths:
           required: false
           schema:
             description: An object of model property name/value pairs
-            $ref: '#/definitions/Campaign'
+            $ref: '#/definitions/ZgTransactionEntry'
         - name: id
           in: path
-          description: Campaign id
+          description: ZgTransactionEntry id
           required: true
           type: string
           format: JSON
@@ -977,14 +977,14 @@ paths:
         '200':
           description: Request was successful
           schema:
-            $ref: '#/definitions/Campaign'
+            $ref: '#/definitions/ZgTransactionEntry'
       deprecated: false
-  '/Campaigns/{id}/replace':
+  '/ZgTransactionEntries/{id}/replace':
     post:
       tags:
-        - Campaign
+        - ZgTransactionEntry
       summary: Replace attributes for a model instance and persist it into the data source.
-      operationId: 'Campaign.replaceById__post_Campaigns_{id}_replace'
+      operationId: 'ZgTransactionEntry.replaceById__post_ZgTransactionEntries_{id}_replace'
       parameters:
         - name: id
           in: path
@@ -998,19 +998,19 @@ paths:
           required: false
           schema:
             description: Model instance data
-            $ref: '#/definitions/Campaign'
+            $ref: '#/definitions/ZgTransactionEntry'
       responses:
         '200':
           description: Request was successful
           schema:
-            $ref: '#/definitions/Campaign'
+            $ref: '#/definitions/ZgTransactionEntry'
       deprecated: false
-  /Campaigns/findOne:
+  /ZgTransactionEntries/findOne:
     get:
       tags:
-        - Campaign
+        - ZgTransactionEntry
       summary: Find first instance of the model matched by filter from the data source.
-      operationId: Campaign.findOne
+      operationId: ZgTransactionEntry.findOne
       parameters:
         - name: filter
           in: query
@@ -1022,14 +1022,14 @@ paths:
         '200':
           description: Request was successful
           schema:
-            $ref: '#/definitions/Campaign'
+            $ref: '#/definitions/ZgTransactionEntry'
       deprecated: false
-  /Campaigns/update:
+  /ZgTransactionEntries/update:
     post:
       tags:
-        - Campaign
+        - ZgTransactionEntry
       summary: 'Update instances of the model matched by {{where}} from the data source.'
-      operationId: Campaign.updateAll
+      operationId: ZgTransactionEntry.updateAll
       parameters:
         - name: where
           in: query
@@ -1043,7 +1043,7 @@ paths:
           required: false
           schema:
             description: An object of model property name/value pairs
-            $ref: '#/definitions/Campaign'
+            $ref: '#/definitions/ZgTransactionEntry'
       responses:
         '200':
           description: Request was successful
@@ -1056,12 +1056,12 @@ paths:
                 type: number
                 format: double
       deprecated: false
-  /Campaigns/count:
+  /ZgTransactionEntries/count:
     get:
       tags:
-        - Campaign
+        - ZgTransactionEntry
       summary: Count instances of the model matched by where from the data source.
-      operationId: Campaign.count
+      operationId: ZgTransactionEntry.count
       parameters:
         - name: where
           in: query
@@ -1080,61 +1080,55 @@ paths:
                 format: double
       deprecated: false
 definitions:
-  Transaction:
+  ZgUserProfile:
     properties:
       id:
-        description: transaction id
+        description: id of
         type: string
-      timestamp:
-        description: timestamp
+      role:
+        description: 'ENUM of [User, System]'
         type: string
-        format: date-time
-      amount:
-        type: number
-        format: double
-      ticker:
+      email:
+        description: Email address
         type: string
-      from:
-        description: accountId it was sent from
-        type: string
-      to:
-        description: account id it was sent to
+      fullname:
         type: string
     required:
       - id
     additionalProperties: false
   x-any:
     properties: {}
-  AccountInfo:
+  ZgWallet:
     properties:
       id:
-        description: AccountId
+        type: number
+        format: double
+      ownerId:
         type: string
-      type:
-        description: accountType
+      tokenSimbol:
         type: string
-      virtualAccountIds:
-        description: array of ids
-        type: object
-      virtualChannel:
-        description: virtual Channel such as WeChat of account
+      currentBalance:
+        type: number
+        format: double
+      lastestTxId:
         type: string
-      realAccountId:
-        type: string
-    required:
-      - id
-      - type
     additionalProperties: false
-  Campaign:
+  ZgTransactionEntry:
     properties:
-      accountId:
-        type: string
-      name:
-        type: string
-      ticker:
-        type: string
       id:
         type: string
+      ownerId:
+        type: string
+      timestamp:
+        type: string
+        format: date-time
+      counterpartId:
+        type: string
+      tokenSimbol:
+        type: string
+      amount:
+        type: number
+        format: double
     required:
       - id
     additionalProperties: false

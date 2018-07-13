@@ -1,7 +1,7 @@
 {
-  "sample-server-dev": {
-    "url": "mysql://sampleuser:samplepassword@samplehost/sampledb?reconnect=true",
-    "name": "sample-server-dev",
+  "db-dev": {
+    "url": "mysql://bd81eacf0d3f80:a2b1788a@us-cdbr-iron-east-04.cleardb.net/heroku_bc62be378c0e97a?reconnect=true",
+    "name": "db-dev",
     "connector": "mysql",
     "all": false
   }

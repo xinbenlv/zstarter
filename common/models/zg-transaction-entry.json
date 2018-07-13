@@ -1,0 +1,51 @@
+{
+  "name": "ZgTransactionEntry",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "id": {
+      "type": "string",
+      "id": true,
+      "required": true,
+      "isArray": false
+    },
+    "ownerId": {
+      "type": "string",
+      "required": false
+    },
+    "timestamp": {
+      "type": "date",
+      "required": false
+    },
+    "counterpartId": {
+      "type": "string",
+      "required": false
+    },
+    "tokenSimbol": {
+      "type": "string",
+      "required": false
+    },
+    "amount": {
+      "type": "number",
+      "required": false
+    }
+  },
+  "validations": [],
+  "relations": {
+    "owner": {
+      "type": "belongsTo",
+      "model": "ZgUserProfile",
+      "foreignKey": "ownerId"
+    },
+    "counterpart": {
+      "type": "belongsTo",
+      "model": "ZgUserProfile",
+      "foreignKey": "counterpartId"
+    }
+  },
+  "acls": [],
+  "methods": {}
+}
