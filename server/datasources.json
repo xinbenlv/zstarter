@@ -1,0 +1,8 @@
+{
+  "sample-server-dev": {
+    "url": "mysql://sampleuser:samplepassword@samplehost/sampledb?reconnect=true",
+    "name": "sample-server-dev",
+    "connector": "mysql",
+    "all": false
+  }
+}

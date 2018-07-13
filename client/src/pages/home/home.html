@@ -1,0 +1,20 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>{{ 'HELLO_WORLD' | translate }}</ion-title>
+    <ion-buttons end>
+      <button ion-button (click)="changeLang('en')">
+        <i [ngClass]="translate.currentLang == 'en' ? 'flag-large' : ''" class="flag-icon flag-icon-gb"></i>
+      </button>
+      <button ion-button (click)="changeLang('zh')">
+        <i [ngClass]="translate.currentLang == 'zh' ? 'flag-large' : ''" class="flag-icon flag-icon-cn"></i>
+      </button>
+    </ion-buttons>
+
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-card>
+    <h1>{{ 'HELLO_WORLD' | translate }}</h1>
+  </ion-card>
+</ion-content>
