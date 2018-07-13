@@ -11,4 +11,7 @@ export class HomePage {
               private translate:TranslateService) {
   }
 
+  async changeLang(lang) {
+    this.translate.use(lang);
+  }
 }

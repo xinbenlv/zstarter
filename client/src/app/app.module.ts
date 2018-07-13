@@ -7,17 +7,11 @@ import { TabsPage } from '../pages/tabs/tabs';
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
-import {RegisterPage} from "../pages/home/register";
-import {ReceivePage} from '../pages/home/receive';
 import {SDKBrowserModule} from "../loopbacksdk";
-import {WalletPage} from "../pages/home/wallet";
-import {DemoPage} from "../pages/demo/demo";
 
 import {HttpClient, HttpClientModule} from '@angular/common/http';
 import {TranslateModule, TranslateLoader} from '@ngx-translate/core';
 import {TranslateHttpLoader} from '@ngx-translate/http-loader';
-import {TxComponent} from "../pages/components/tx.comp";
-import {CampaignPage} from "../pages/campaign/campaign.page";
 
 // AoT requires an exported function for factories
 export function HttpLoaderFactory(httpClient: HttpClient) {
@@ -26,15 +20,9 @@ export function HttpLoaderFactory(httpClient: HttpClient) {
 
 @NgModule({
   declarations: [
-    TxComponent,
     MyApp,
     HomePage,
-    DemoPage,
     TabsPage,
-    CampaignPage,
-    RegisterPage,
-    ReceivePage,
-    WalletPage,
   ],
   imports: [
     BrowserModule,
@@ -52,9 +40,6 @@ export function HttpLoaderFactory(httpClient: HttpClient) {
     },  {
       links: [
         {segment: '', component: TabsPage, name: 'TabsPage' },
-        {segment: 'receive/campaign/:campaignId', component: ReceivePage, name: 'ReceivePage' },
-        {segment: 'wallet/:accountId', component: WalletPage, name: 'WalletPage' },
-        {segment: 'campaign/:campaignId', component: CampaignPage, name: 'CampaignPage' },
       ]
     }),
   ],
@@ -62,12 +47,7 @@ export function HttpLoaderFactory(httpClient: HttpClient) {
   entryComponents: [
     MyApp,
     HomePage,
-    DemoPage,
-    CampaignPage,
     TabsPage,
-    RegisterPage,
-    ReceivePage,
-    WalletPage,
   ],
   providers: [
     StatusBar,
